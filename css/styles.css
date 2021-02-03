@@ -1,76 +1,71 @@
-/*================*/
-/*GLOBAL STYLES*/
-/*================*/
+/***************/
+/*CSS VARIABLES*/
 :root {
-  /*css variables go here*/
+  --card-border: rgb(30, 36, 112);
 }
 
+/***************/
+/*GLOBAL STYLES*/
+/***************/
 body  {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Montserrat, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-size: 18px;
 }
 
-/*================*/
+/***************/
 /*HEADER*/
-/*================*/
-
+/***************/
 header {
   background-color: #777;
-}
-
-
-
-/*================*/
-/*ABOUT ME*/
-/*================*/
-
-
-
-
-/*================*/
-/*MY WORK*/
-/*================*/
-
-.my-work {}
-
-.container {
   display: flex;
-  flex-wrap: wrap;
-  /*TODO: add a max-width for super wide screens*/
-  background-color: #888;
+  justify-content: space-between;
   margin-left: 100px;
+  max-width: 1200px;
 }
 
-/*first project example*/
-.project-feature {
-  max-width: 600px;
-  display: block;
+ul {
+  list-style: none;
+  margin-right: 100px;
 }
 
-.project-feature img {
-  width: 100%;
-}
-
-/*subsequent project examples*/
-.project-tile {
+li {
   display: inline-block;
-    max-width: 400px;
+  padding: 0 15px;
+  text-transform: uppercase;
 }
 
-.project-tile img {
-  width: 100%;
+/***************/
+/*ABOUT ME*/
+/***************/
+main {
+  margin-left: 100px;
+  max-width: 1200px;
 }
 
-h4 {}
+.container-about-me {
+  display: flex;
+  justify-content: space-between;
+}
 
-h5 {}
+.about-me-text {
+  padding-right: 30px;
+}
 
-/*================*/
+.about-me-photo img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/***************/
+/*MY WORK*/
+/***************/
+
+/***************/
 /*CONTACT ME*/
-/*================*/
+/***************/
 
-
-
-
-/*================*/
+/***************/
 /*FOOTER*/
-/*================*/
+/***************/
