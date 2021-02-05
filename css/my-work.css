@@ -1,0 +1,92 @@
+/***************/
+/*MY WORK*/
+/***************/
+
+/*====CONTAINERS====*/
+/*==================*/
+.container-main-feature {
+  width: 100%;
+}
+
+.container-main-feature img {
+  max-height: 400px;
+} 
+
+.container-small-projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding: 5px;
+}
+
+/*====CARDS====*/
+/*=============*/
+.main-feature-card {
+  width: calc(100% - 10px);
+}
+
+.small-project-card {
+  min-width: 300px;
+  max-width: 650px;
+  flex: 1 0 0;
+  padding: 10px;
+}
+
+.hover-card {
+  border: 4px solid transparent; 
+}
+
+.hover-card.small-project-card {
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.hover-card:hover {
+  opacity: 1.0;
+}
+
+.hover-card img {
+  width: 100%;
+  height: auto;
+  min-width: 300px;
+  border: 4px solid transparent; 
+} 
+
+/*===BORDER GRADIENT===*/
+/*=====================*/
+.border-gradient{
+  border: 4px solid transparent;
+}
+
+.border-gradient img:hover {
+  border: 4px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #473b7b, #30d2be);
+}
+
+/*====LABEL====*/
+/*=============*/
+.project-label {
+  background-image: linear-gradient(-225deg, #473b7b 0%, #3584a7 51%, #30d2be 100%);
+  max-width: 200px;
+  position: relative;
+  bottom: 40px;
+  left: -10px;
+}
+
+h4, h5 {
+  color: white;
+  font-weight: normal;
+  margin: 2px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-family: 'Source Sans Pro', Courier, monospace;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
