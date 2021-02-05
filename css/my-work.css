@@ -1,6 +1,15 @@
 /***************/
 /*MY WORK*/
 /***************/
+/*TODO: Need main feature image to be responsive.*/ 
+/*TODO: Need to increase .small-project-card img 's opacity when hovering on sibling .project-label*/
+/*TODO: main feature card div needs to be center-aligned*/
+
+.my-work h3 {
+  font-size: 1.6em;
+  padding-left: 30px;
+  margin-top: 0px;
+}
 
 /*====CONTAINERS====*/
 /*==================*/
@@ -10,6 +19,7 @@
 
 .container-main-feature img {
   max-height: 400px;
+  width: 100%;
 } 
 
 .container-small-projects {
@@ -22,7 +32,12 @@
 /*====CARDS====*/
 /*=============*/
 .main-feature-card {
-  width: calc(100% - 10px);
+  max-width: calc(100% - 10px);
+  margin: 0 auto;
+}
+
+.main-feature-card img {
+  border: 4px solid transparent;
 }
 
 .small-project-card {
@@ -32,25 +47,23 @@
   padding: 10px;
 }
 
-.hover-card {
-  border: 4px solid transparent; 
-}
-
-.hover-card.small-project-card {
-  opacity: 0.6;
-  transition: opacity 0.3s;
-}
-
-.hover-card:hover {
-  opacity: 1.0;
-}
-
-.hover-card img {
+.small-project-card img {
   width: 100%;
   height: auto;
   min-width: 300px;
   border: 4px solid transparent; 
-} 
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.small-project-card img:hover {
+  opacity: 1.0;
+}
+
+/* .small-project-card:hover ~? >? .project-label:hover img {
+  opacity: 1.0;
+} */
+
 
 /*===BORDER GRADIENT===*/
 /*=====================*/
@@ -61,23 +74,26 @@
 .border-gradient img:hover {
   border: 4px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, #473b7b, #30d2be);
+  /* border-image-source: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); */
+
+  border-image-source: linear-gradient(120deg, #46f887 0%, #1cadf5 100%);
 }
 
 /*====LABEL====*/
 /*=============*/
 .project-label {
-  background-image: linear-gradient(-225deg, #473b7b 0%, #3584a7 51%, #30d2be 100%);
-  max-width: 200px;
+  background-image: linear-gradient(120deg, #f6d365 0%, #f89479 100%);
+  max-width: 210px;
   position: relative;
   bottom: 40px;
   left: -10px;
 }
 
 h4, h5 {
-  color: white;
+  color: var(--dark-color);
   font-weight: normal;
   margin: 2px;
+  padding: 2px;
 }
 
 h4 {
@@ -88,5 +104,6 @@ h5 {
   font-family: 'Source Sans Pro', Courier, monospace;
   text-transform: uppercase;
   font-size: 16px;
+  /* font-weight: bold; */
 }
 

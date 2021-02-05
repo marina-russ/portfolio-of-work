@@ -1,7 +1,11 @@
+/*TODO: media query to change body margin at diff. max-widths*/
+
 /***************/
 /*CSS VARIABLES*/
 :root {
   --card-border: rgb(30, 36, 112);
+  --dark-color: #1e2225;
+  --light-color: rgb(245, 245, 245);
 }
 
 /***************/
@@ -11,37 +15,81 @@ body  {
   font-family: Montserrat, Helvetica, sans-serif;
   box-sizing: border-box;
   font-size: 18px;
-  background-color: #333940;
+  background-color: var(--dark-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+p {
+  color: var(--light-color);
+  font-size: 1.2em;
+  line-height: 1.8;
 }
 
 /***************/
 /*HEADER*/
 /***************/
 header {
-  background-color: #777;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+
+
+
   display: flex;
   justify-content: space-between;
   margin-left: 100px;
   max-width: 1200px;
 }
 
-ul {
-  list-style: none;
+.header-headings {
+  padding-left: 50px;
+}
+
+header ul {
   margin-right: 100px;
 }
 
-li {
+header li {
   display: inline-block;
   padding: 0 15px;
   text-transform: uppercase;
+  margin-top: 40px;
+}
+
+header a {
+  border: 2px dotted #fea51e;
+  border-radius: 20px;
+  padding: 20px;
+
+}
+
+header a:hover {
+  border: 2px solid #d98000;
+  background-color: #d98000;
+  color: var(--light-color);
 }
 
 /***************/
 /*ABOUT ME*/
 /***************/
+
 main {
   margin-left: 100px;
   max-width: 1200px;
+}
+
+.about-me {
+  padding-left: 30px;
+}
+
+h3 {
+  color: var(--light-color);
 }
 
 .container-about-me {
@@ -49,21 +97,74 @@ main {
   justify-content: space-between;
 }
 
-.about-me-text {
+.about-me h3 {
+  font-size: 1.6em;
+  padding-top: 20px;
+}
+
+.about-me p {
+  padding-left: 100px;
   padding-right: 30px;
 }
 
 .about-me-photo img {
-  max-width: 250px;
+  width: 200px;
   height: auto;
   border-radius: 50%;
+  margin-left: 30px;
 }
 
 /***************/
 /*CONTACT ME*/
 /***************/
 
+.contact-me {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+
+}
+
+.contact-me h3 {
+  color: var(--dark-color);
+  padding: 20px 0 0 40px;
+  font-size: 1.5em;
+}
+
+.contact-me p {
+  color: var(--dark-color);
+  padding-left: 30px;
+}
+
+i {
+  padding-right: 20px;
+  padding-bottom: 10px;
+  font-size: 2em;
+}
+
+.fa-github {
+  color: #6e5494;
+}
+
+.fa-linkedin {
+  color: #0a66c2;
+}
 
 /***************/
 /*FOOTER*/
 /***************/
+footer {
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  color: #fff;
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply;
+}
+
+.footer-text {
+  width: 500px;
+  margin: 0 auto;
+}
