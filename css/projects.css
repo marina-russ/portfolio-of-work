@@ -1,0 +1,13 @@
+.project-page h4, 
+.project-page h5 {
+  color: #fff;
+}
+
+.project-page h5 {
+  margin-bottom: 20px;
+}
+
+.project-page img {
+  width: 800px;
+  height: auto;
+}
