@@ -1,14 +1,11 @@
 /***************/
 /*MY WORK*/
 /***************/
-/*TODO: Need main feature image to be responsive.*/ 
 /*TODO: Need to increase .small-project-card img 's opacity when hovering on sibling .project-label*/
 /*TODO: main feature card div needs to be center-aligned*/
 
 .my-work h3 {
   font-size: 1.6em;
-  padding-left: 30px;
-  margin-top: 0px;
 }
 
 /*====CONTAINERS====*/
@@ -23,17 +20,13 @@
 } 
 
 .container-small-projects {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  padding: 5px;
 }
 
 /*====CARDS====*/
 /*=============*/
+
 .main-feature-card {
-  max-width: calc(100% - 10px);
-  margin: 0 auto;
+  max-width: 700px;
 }
 
 .main-feature-card img {
@@ -41,10 +34,9 @@
 }
 
 .small-project-card {
-  min-width: 300px;
+  /* min-width: 300px;
   max-width: 650px;
-  flex: 1 0 0;
-  padding: 10px;
+  padding: 10px; */
 }
 
 .small-project-card img {
@@ -92,8 +84,8 @@
 .my-work h4, h5 {
   color: var(--dark-color);
   font-weight: normal;
-  margin: 2px;
-  padding: 2px;
+  /* margin: 2px;
+  padding: 2px; */
 }
 
 h4 {

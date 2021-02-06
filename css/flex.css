@@ -1,0 +1,37 @@
+/****************/
+/*FLEXBOX STYLES*/
+/****************/
+body  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-about-me {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container-main-feature {
+  display: flex;
+  display: row;
+  justify-content: center;
+}
+
+.container-small-projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.main-feature-card,
+.small-project-card {
+  flex: 1 0 0;
+}

@@ -2,6 +2,7 @@
 
 /***************/
 /*CSS VARIABLES*/
+/***************/
 :root {
   --card-border: rgb(30, 36, 112);
   --dark-color: #1e2225;
@@ -16,9 +17,11 @@ body  {
   box-sizing: border-box;
   font-size: 18px;
   background-color: var(--dark-color);
+  text-rendering: optimizeLegibility;
 }
 
 ul {
+  padding: 0;
   list-style: none;
 }
 
@@ -36,37 +39,25 @@ p {
 /***************/
 /*HEADER*/
 /***************/
-header {
+.container-bkgd {
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-
-
-
-  display: flex;
-  justify-content: space-between;
-  margin-left: 100px;
-  max-width: 1200px;
+  width: 100%:
 }
 
-.header-headings {
-  padding-left: 50px;
-}
-
-header ul {
-  margin-right: 100px;
+.title {
+  padding-right: 30px;
 }
 
 header li {
   display: inline-block;
-  padding: 0 15px;
+  padding: 10px;
   text-transform: uppercase;
-  margin-top: 40px;
 }
 
 header a {
   border: 2px dotted #fea51e;
-  border-radius: 20px;
-  padding: 20px;
-
+  border-radius: 15px;
+  padding: 10px;
 }
 
 header a:hover {
@@ -79,38 +70,34 @@ header a:hover {
 /*ABOUT ME*/
 /***************/
 
-main {
-  margin-left: 100px;
+main,
+header,
+.footer-text {
+  margin: auto 100px;
   max-width: 1200px;
 }
 
 .about-me {
-  padding-left: 30px;
+  margin-top: 30px;
 }
 
 h3 {
   color: var(--light-color);
-}
-
-.container-about-me {
-  display: flex;
-  justify-content: space-between;
+  margin: 25px 0 5px;
 }
 
 .about-me h3 {
   font-size: 1.6em;
-  padding-top: 20px;
 }
 
 .about-me p {
-  padding-left: 100px;
-  padding-right: 30px;
 }
 
 .about-me-photo img {
   width: 200px;
   height: auto;
   border-radius: 50%;
+  border: 7px solid #8b7d5d;
   margin-left: 30px;
 }
 
@@ -123,23 +110,18 @@ h3 {
   width: 500px;
   margin: 0 auto;
   background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-
 }
 
 .contact-me h3 {
   color: var(--dark-color);
-  padding: 20px 0 0 40px;
   font-size: 1.5em;
 }
 
 .contact-me p {
   color: var(--dark-color);
-  padding-left: 30px;
 }
 
 i {
-  padding-right: 20px;
-  padding-bottom: 10px;
   font-size: 2em;
 }
 
@@ -155,16 +137,11 @@ i {
 /*FOOTER*/
 /***************/
 footer {
-  margin-top: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 40px;
   color: #fff;
   background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
   background-blend-mode: multiply;
 }
 
 .footer-text {
-  width: 500px;
-  margin: 0 auto;
-}
+  text-align: center;
+} 

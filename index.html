@@ -4,9 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marina's Portfolio</title>
+
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/my-work.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="css/flex.css">
+  <link rel="stylesheet" href="css/mediaquery.css">
+
   <script src="https://kit.fontawesome.com/d1d27ac11f.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
@@ -15,20 +19,24 @@
 </head>
 
 <body>
+  <div class="container-bkgd">
+    <header>
+      <div class="title">
+        <h1>Marina Russ</h1>
+        <h2>Front-End Web Developer</h2>
+      </div>
 
-  <header>
-    <div class="header-headings">
-      <h1>Marina Russ</h1>
-      <h2>Front-End Web Developer</h2>
-    </div>  
-    <nav>
-      <ul>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#my-work">My Work</a></li>
-        <li><a href="#contact-me">Contact Me</a></li>
-      </ul>
-    </nav>
-  </header>
+      <nav>
+        <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#my-work">My Work</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+      </nav>
+
+    </header>
+  </div>
+
   <main>
     <section id="about-me" class="about-me">
       <h3>About Me</h3>
@@ -41,14 +49,17 @@
             </p>
           </div>
           <div class="about-me-photo">
-            <img src="imgs/icon-image.jpg" alt="photo of Marina">
+            <img src="imgs/photo.jpg" alt="photo of Marina">
           </div>
       </div>
     </section>
 
     <section id="my-work" class="my-work">
-      <div class="container-main-feature">
+      <div class="my-work-heading">
         <h3>My Work</h3>
+      </div>
+
+      <div class="container-main-feature">
         <div class="main-feature-card border-gradient">
           <a href="projects/project1.html"><img src="imgs/redpanda.jpg" alt="TODO:"></a>
           <div class="project-label">
@@ -56,6 +67,7 @@
             <h5>Tech Stack Featured</h5>
           </div>
         </div>
+
       </div>
       <div class="container-small-projects">
         <div class="small-project-card hover-card border-gradient">
