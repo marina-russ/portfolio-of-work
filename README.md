@@ -32,8 +32,9 @@ The image previews of the code examples are slightly transparent until you over 
 
 ### :white_flower: Deployed Website: <a name="deployed"></a>
 
-![GitHub Logo](/imgs/screenshot-full.png)
 
 [Link to Portfolio Page](https://marina-russ.github.io/portfolio-of-work/)
+
+![webpage](/imgs/screenshot-full.png)
 
 Thank you for checking out my page!
