@@ -32,9 +32,15 @@ The image previews of the code examples are slightly transparent until you over 
 
 ### :white_flower: Deployed Website: <a name="deployed"></a>
 
-
 [Link to Portfolio Page](https://marina-russ.github.io/portfolio-of-work/)
 
-![webpage](/imgs/screenshot-full.png)
+<table>
+  <tr>
+    <td>Desktop View</td><td>Tablet View</td><td>Mobile View</td>
+  </tr>
+  <tr style="vertical-align:top">
+    <td style="vertical-align:top"> <img src="imgs/screenshot-desktop.png"> </td><td style="vertical-align:top"> <img src="imgs/screnshot-tablet.png"> </td><td style="vertical-align:top"> <img src="imgs/screenshot-mobile.png"> </td>
+  </tr>
+ </table>
 
 Thank you for checking out my page!
