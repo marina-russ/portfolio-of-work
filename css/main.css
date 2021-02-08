@@ -34,6 +34,39 @@ p {
   line-height: 1.8;
 }
 
+/****************/
+/*FLEXBOX STYLES*/
+/****************/
+body  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-main-feature {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container-small-projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.main-feature-card,
+.small-project-card {
+  flex: 1 0 0;
+}
+
 /***************/
 /*HEADER*/
 /***************/
@@ -90,22 +123,49 @@ h3 {
   margin: 25px 0 5px;
 }
 
+.container-about-me {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+}
+
 .about-me h3 {
   color: #333;
   font-size: 1.6em;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .about-me p {
   color: black;
 }
 
+.about-me span {
+  background-color: rgba(252, 182, 159, 0.8);
+  padding: 0 3px;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+  /*#fcb69f*/
+}
+
+.about-me span:hover {
+  background-color: rgb(247, 152, 121);
+  /*#fcb69f*/
+}
+
+.about-me-photo {
+  width: 40%;
+  padding: 0 50px 0 20px;
+}
+
 .about-me-photo img {
-  width: 200px;
+  width: 100%;
   height: auto;
   border-radius: 50%;
   border: 7px solid #8b7d5d;
   margin-left: 30px;
+  display: inline;
 }
 
 /***************/
@@ -159,3 +219,8 @@ footer {
   color: #777;
   text-align: center;
 } 
+
+/***************/
+/*MEDIA QUERIES*/
+/***************/
+

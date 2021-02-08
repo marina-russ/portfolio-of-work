@@ -1,0 +1,180 @@
+/***************/
+/*Navigation breakpoint on smaller desktop screens*/
+/***************/
+@media only screen and (max-width: 1050px) {
+
+  main,
+  header {
+    margin: auto 50px;
+  }
+
+  .title {
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 1.7em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  header li {
+    padding: 5px;
+  }
+
+  header a {
+  padding: 7px;
+  }  
+
+  .project-label {
+    position: relative;
+    left: -10px;
+  }
+}
+
+/***************/
+/*Large Tablet Styles*/
+/***************/
+@media only screen and (max-width: 962px) {
+
+  main,
+  header {
+    margin: auto 40px;
+  }
+
+  .title {
+    padding-right: 30px;
+    padding-bottom: 15px;
+  }
+  
+  .about-me-photo {
+    width: 70%;
+  }
+
+  .my-work h3 {
+    font-size: 2em;
+  }
+
+  .project-page {
+    margin: 10px auto;
+  }
+
+  .project-page img {
+    width: 80%;
+  }
+}
+/***************/
+/*Small Tablet Styles*/
+/***************/
+@media only screen and (max-width: 860px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    margin: auto 20;
+  }
+
+  header ul {
+    margin: 7px 0;
+  }
+
+  header li {
+    display: block;
+    text-align: right;
+    padding: 13px 0;
+  }
+
+  header a {
+    border-radius: 15px;
+    padding: 6px;
+  }
+
+  .title {
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  .about-me {
+    margin: 30px 0 50px;
+    box-shadow: 0 12px #777, 0 24px #555;
+  }
+
+  .about-me h3 {
+    margin: 10px 0;
+  }
+
+  .about-me-photo {
+    width: 70%;
+  }
+}
+
+/***************/
+/*Large Mobile Styles*/
+/***************/
+@media only screen and (max-width: 750px) {
+
+  .about-me {
+    font-size: 0.8em;
+    padding: 20px;
+    box-shadow: 0 12px #777, 0 24px #555;
+  }
+
+  .my-work h3 {
+    font-size: 2em;
+  }
+
+  .small-project-card {
+    margin-bottom: 2px;
+  }
+
+  .small-project-card {
+    margin-left: 3px;
+    padding: 5px;
+  }
+
+  .project-label {
+    left: 4px;
+  }
+}
+/***************/
+/*Mobile Styles*/
+/***************/
+@media only screen and (max-width: 600px) {
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 15px;
+  }
+
+  .contact-me {
+    margin: 0 auto 60px;
+    padding: 10px;
+    box-shadow: 0 12px rgb(42, 224, 154), 0 24px rgb(97, 117, 231), 0 -12px rgb(42, 224, 154), 0 -24px rgb(97, 117, 231);
+  }
+}
+
+/*iPhone 5 is 320px wide*/
